@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Еда</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+	<meta name="viewport" content="width: device-width, initial-scale=1.0">
+</head>
+<body>
+	<input type="checkbox"  id="toggle-mob-menu" class="toggle-mob-menu">
+	<input type="checkbox" id="inp-modal" style="display:none">
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__logo logo">
+				<img src="img/logo.png" alt="Logo">
+			</div>
+			<nav class="header__nav">
+				<a class="header__link header__link-active" href="#">Рецепты</a>
+				<a class="header__link" href="#">Продукты</a>
+				<a class="header__link" href="#">Как приготовить</a>
+				<a class="header__link" href="#">Кулинарная книга</a>
+				<a class="header__link" href="#">Здоровье</a>
+				<a class="header__link" href="#">Авторы</a>
+			</nav>
+			<div class="header__bottom">
+				<div class="header__lang lang">
+					<a href="#" class="lang__link lang__link-active">Ru</a>
+					<a href="#" class="lang__link">eng</a>
+					<a href="#" class="lang__link">eng</a>
+				</div>
+				
+				<div class="header__social social-network">
+					<a href="#" class="social-network__link social-network__link-white">
+						<i class="fa-brands fa-vk"></i>
+					</a>
+					<a href="#" class="social-network__link social-network__link-white">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper-main">
+		<main>
+			
+				<div class="top-block">
+					<form action="#" method="GET" class="search">
+						<input class="search__input" placeholder="Поиск" type="text">
+						<button class="search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</form>
+					<div class="top-block__sec-rigth">
+						<div class="users-block">
+							<label for="inp-modal" class="users-block__bell-label">
+								<i class="users-block__bell fa-solid fa-bell"></i>
+							</label>
+							<i class="fa-solid fa-user"></i>
+						</div>
+						<div class="menu-mob">
+							
+							<label for="toggle-mob-menu" class="menu-mob__label">
+								<span class="menu-mob__icon"></span>
+							</label>
+							
+						</div>
+					</div>
+				</div>
+				<div class="separator"></div>
+
+			<section class="select-recipes">
+				<div class="section-title">
+					Подбор рецептов
+				</div>
+				<form action="#" class="select-recipes__form form-recipes">
+					<div class="form-recipes__block-left">
+						<select name="dessert" id="recipes-dessert" class="form-recipes__select">
+							<option value="" hidden selected disabled>Дессерты</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+						</select>
+						<select name="dish" id="recipes-dish" class="form-recipes__select">
+							<option value="" hidden selected disabled>Дессерты</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+						</select>
+						<select name="kitchen" id="recipes-kitchen" class="form-recipes__select">
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+						</select>
+						<select name="menu" id="recipes-menu" class="form-recipes__select">
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+						</select>
+						<select name="skill" id="recipes-skill" class="form-recipes__select">
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+							<option>Блюда</option>
+						</select>
+					</div>
+					<div class="form-recipes__block-right">
+						<input type="text" placeholder="Ингридиенты, детали" class="form-recipes__search">
+						<button class="form-recipes__button">Подобрать рецепт</button>
+					</div>
+				</form>
+				<div class="select-recipes__articles">
+					<div class="article-main">
+						<img src="img/article-main-img1.png" alt="" class="article-main__img">
+						<div class="article-main__title">
+							<div class="article-main__h2">Блюдо дня</div>
+							<div class="article-main__h1">Куриные ножки на гриле</div>
+						</div>
+					</div>
+					<div class="article-main">
+						<img src="img/article-main-img2.png" alt="" class="article-main__img">
+						<div class="article-main__title">
+							<div class="article-main__h2">Лучшие рецепты недели</div>
+							<div class="article-main__h1">7 лучших рецептов недели</div>
+						</div>
+					</div>
+					<div class="article">
+						<div class="article__tag">Вкусно</div>
+						<div class="article__title">Как приготовить пирог</div>
+						<img src="img/article-1.png" alt="Как приготовить пирог" class="article__img">
+					</div>
+					<div class="article">
+						<div class="article__tag">Полезно</div>
+						<div class="article__title">Как приготовить сырный торт с овощами</div>
+						<img src="img/article-img5.png" alt="Как приготовить сырный торт с овощами" class="article__img">
+					</div>
+					<div class="article">
+						<div class="article__tag">Полезно</div>
+						<div class="article__title">10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</div>
+						<img src="img/article-img2.png" alt="10 ПРОСТЫХ НАПИТКОВ В ЖАРУ" class="article__img">
+					</div>
+					<div class="article">
+						<div class="article__tag">Полезно</div>
+						<div class="article__title">ЧТО ТАКОЕ МЕД?</div>
+						<img src="img/article-img3.png" alt="ЧТО ТАКОЕ МЕД?" class="article__img">
+					</div>
+					<div class="article">
+						<div class="article__tag">Полезно</div>
+						<div class="article__title">КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ ТЕСТО</div>
+						<img src="img/article-img4.png" alt="КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ ТЕСТО" class="article__img">
+					</div>
+					<div class="article">
+						<div class="article__tag">Полезно</div>
+						<div class="article__title">ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</div>
+						<img src="img/article-img6.png" alt="ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ" class="article__img">
+					</div>
+
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section class="select-recipes">
+				<div class="section-title">
+					Рецепты
+				</div>
+				<div class="select-recipes__filter-wrapper">
+					<div class="select-recipes__filter filter">
+						<span class="filter__name filter__name-active">Новые рецепты</span>
+						<span class="filter__name">Популярные</span>
+						<span class="filter__name">Рекомендуем</span>
+					</div>
+				</div>
+				<div class="select-recipes__articles">
+
+					<div class="select-recipes__item item-recipes">
+						<div class="item-recipes__img-block">
+							<img class="item-recipes__img" src='img/item-recipes-1.png' alt="">
+							<div class="item-recipes__author-block">
+								<div class="item-recipes__author-img">
+									<img src="img/author.png" alt="Dariya Fedorenko">
+								</div>
+								<div class="item-recipes__author-name">Dariya Fedorenko</div>
+							</div>
+						</div>
+						<div class="item-recipes__content-block">
+							<div class="item-recipes__title">Утиные ножки с овощами и грудинкой фасолью</div>
+							<div class="item-recipes__info">
+								<span class="item-recipes__info-time">135</span>
+								<span class="item-recipes__info-skill">Сложно</span>
+								<span class="item-recipes__info-calories">125</span>
+							</div>
+							<div class="item-recipes__ingredients">говядина, масло оплёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец чёрный, зелень петрушки</div>
+							<div class="item-recipes__soc">
+								<div class="item-recipes__soc-like">150</div>
+								<div class="item-recipes__soc-network-block social-network">
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-vk"></i>
+									</a>
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<div class="select-recipes__item item-recipes">
+						<div class="item-recipes__img-block">
+							<img class="item-recipes__img" src='img/item-recipes-2.png' alt="">
+							<div class="item-recipes__author-block">
+								<div class="item-recipes__author-img">
+									<img src="img/author.png" alt="Dariya Fedorenko">
+								</div>
+								<div class="item-recipes__author-name">Dariya Fedorenko</div>
+							</div>
+						</div>
+						<div class="item-recipes__content-block">
+							<div class="item-recipes__title">Салат из свеклы с козьим сыром и медовой заправкой</div>
+							<div class="item-recipes__info">
+								<span class="item-recipes__info-time">25</span>
+								<span class="item-recipes__info-skill">Легко</span>
+								<span class="item-recipes__info-calories">60</span>
+							</div>
+							<div class="item-recipes__ingredients">говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель</div>
+							<div class="item-recipes__soc">
+								<div class="item-recipes__soc-like">96</div>
+								<div class="item-recipes__soc-network-block social-network">
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-vk"></i>
+									</a>
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+
+					<div class="select-recipes__item item-recipes">
+						<div class="item-recipes__img-block">
+							<img class="item-recipes__img" src='img/item-recipes-3.png' alt="">
+							<div class="item-recipes__author-block">
+								<div class="item-recipes__author-img">
+									<img src="img/author.png" alt="Dariya Fedorenko">
+								</div>
+								<div class="item-recipes__author-name">Dariya Fedorenko</div>
+							</div>
+						</div>
+						<div class="item-recipes__content-block">
+							<div class="item-recipes__title">Салат из свеклы с козьим сыром и медовой заправкой</div>
+							<div class="item-recipes__info">
+								<span class="item-recipes__info-time">25</span>
+								<span class="item-recipes__info-skill">Легко</span>
+								<span class="item-recipes__info-calories">60</span>
+							</div>
+							<div class="item-recipes__ingredients">говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель</div>
+							<div class="item-recipes__soc">
+								<div class="item-recipes__soc-like">96</div>
+								<div class="item-recipes__soc-network-block social-network">
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-vk"></i>
+									</a>
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+
+					<div class="select-recipes__item item-recipes">
+						<div class="item-recipes__img-block">
+							<img class="item-recipes__img" src='img/item-recipes-4.png' alt="">
+							<div class="item-recipes__author-block">
+								<div class="item-recipes__author-img">
+									<img src="img/author.png" alt="Dariya Fedorenko">
+								</div>
+								<div class="item-recipes__author-name">Dariya Fedorenko</div>
+							</div>
+						</div>
+						<div class="item-recipes__content-block">
+							<div class="item-recipes__title">Салат из свеклы с козьим сыром и медовой заправкой</div>
+							<div class="item-recipes__info">
+								<span class="item-recipes__info-time">25</span>
+								<span class="item-recipes__info-skill">Легко</span>
+								<span class="item-recipes__info-calories">60</span>
+							</div>
+							<div class="item-recipes__ingredients">говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель</div>
+							<div class="item-recipes__soc">
+								<div class="item-recipes__soc-like">96</div>
+								<div class="item-recipes__soc-network-block social-network">
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-vk"></i>
+									</a>
+									<a href="#" class="social-network__link">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+				</div>
+			</section>
+			<div class="separator"></div>
+			<section class="compilation">
+				<div class="section-title">
+					#ГорячаяПодборка
+				</div>
+				<div class="compilation__items">
+					<a href="#" class="item-compilation compilation__item">
+						<img class="item-compilation__img" src="img/compilation-1.png" alt="ПОХМЕЛЬНЫЕ РЕЦЕПТЫ">
+						<div class="item-compilation__title">ПОХМЕЛЬНЫЕ РЕЦЕПТЫ</div>
+					</a>
+
+					<a href="#" class="item-compilation compilation__item">
+						<img class="item-compilation__img" src="img/compilation-2.png" alt="МАСЛЕНИЦА">
+						<div class="item-compilation__title">МАСЛЕНИЦА</div>
+					</a>
+
+					<a href="#" class="item-compilation compilation__item">
+						<img class="item-compilation__img" src="img/compilation-3.png" alt="Рецепты для детей">
+						<div class="item-compilation__title">Рецепты для детей</div>
+					</a>
+
+					<a href="#" class="item-compilation compilation__item">
+						<img class="item-compilation__img" src="img/compilation-4.png" alt="Здоровое питание">
+						<div class="item-compilation__title">Здоровое питание</div>
+					</a>
+				</div>
+			</section>
+			<section class="top-author">
+				<div class="section-title">
+					Топ авторов
+				</div>
+				<div class="top-author__list">
+					<div class="top-author__author top-author__author-1">
+						<img src="img/top-author.png" alt="">
+					</div>
+
+					<div class="top-author__author-2 top-author__author">
+						<img src="img/top-author.png" alt="">
+					</div>
+					<div class="top-author__author-3 top-author__author">
+						<img src="img/top-author.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__block">
+					<div class="subscribe__title">Подпишитесь на рассылку рецептов и советов</div>
+					<form action="#" class="subscribe__form-block">
+						<input name="email" type="text" placeholder="Адрес электронной почты" class="subscribe__input">
+						<button class="subscribe__button"><i class="fa-regular fa-angle-right"></i></button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			
+			<nav class="footer__nav nav-footer">
+				<a href="№" class="nav-footer__link">Главное</a>
+				<a href="№" class="nav-footer__link">Рецепты</a>
+				<a href="№" class="nav-footer__link">Идеи</a>
+				<a href="№" class="nav-footer__link">Журнал</a>
+				<a href="№" class="nav-footer__link">Авторы</a>
+				<a href="№" class="nav-footer__link">Реклам</a>
+				<a href="№" class="nav-footer__link">Fag</a>
+			</nav>
+			<div class="footer__soc-network-block social-network">
+				<a href="#" class="social-network__link social-network__link-grey">
+					<i class="fa-brands fa-vk"></i>
+				</a>
+				<a href="#" class="social-network__link social-network__link-grey">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</div>
+		</footer>
+	</div>
+
+<div id="modal" class="modal">
+	<div class="modal__body">
+		<label for="inp-modal" class="modal__close-label">
+			<span class="modal__close-btn"></span>
+		</label>
+		<div class="modal__content">
+			<ul class="modal__list">
+				<li class="modal__item">Text</li>
+				<li class="modal__item">Text</li>
+				<li class="modal__item">Text</li>
+			</ul>
+		</div>
+	</div>	
+</div>
+	<script src="js/libs.min.js"></script>
+	<script>
+		document.querySelector(".toggle-mob-menu").addEventListener('change',event=>{
+			const body =document.querySelector("body").classList;
+			if(event.target.checked){
+				body.add("overflowHidden");
+			}else{
+				body.remove("overflowHidden");
+			}
+
+	})
+	</script>
+</body>
+</html>
